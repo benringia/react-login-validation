@@ -43,13 +43,13 @@ const Login = (props) => {
     isValid: undefined,
   });
 
-  useEffect(() => {
-    console.log("Effect running");
+  // useEffect(() => {
+  //   console.log("Effect running");
 
-    return () => {
-      console.log("EFFECT CLEAN UP");
-    };
-  }, []);
+  //   return () => {
+  //     console.log("EFFECT CLEAN UP");
+  //   };
+  // }, []);
 
   const { isValid: emailIsValid } = emailState;
   const { isValid: passwordIsValid } = passwordState;
@@ -61,7 +61,6 @@ const Login = (props) => {
     }, 500);
 
     return () => {
-      console.log("cleanUo");
       clearTimeout(identifier);
     };
   }, [emailIsValid, passwordIsValid]);
