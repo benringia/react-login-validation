@@ -1,2 +1,2 @@
 # react-login-validation
-some simple react basic validation
+some simple react basic login validation
